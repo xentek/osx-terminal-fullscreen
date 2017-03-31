@@ -11,7 +11,7 @@ if [ -f ./dist/Terminal-FullScreen.dmg ]; then
   rm -f .git/RELEASE_EDITMSG
   touch .git/RELEASE_EDITMSG
   echo "${1}\n\n${2}" >> .git/RELEASE_EDITMSG
-  hub release create -f .git/RELEASE_EDITMSG ${1}
+  hub release create -a ./dist/Terminal-FullScreen.dmg -f .git/RELEASE_EDITMSG ${1}
 else
   echo "$(pwd)/dist/Terminal-FullScreen.dmg does not exist"
 fi
