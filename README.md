@@ -23,4 +23,4 @@ In addition, you will be asked for authorization to allow `Accessibility` settin
 
 ## Attribution
 
-[Flatwoken Terminal Icon](https://github.com/alecive/FlatWoken) by [Alessandro Roncone](https://github.com/alecive), which was released under the [CC BY-SA 4.0 License](http://creativecommons.org/licenses/by-sa/4.0/) license.
+[Flatwoken Terminal Icon](https://github.com/alecive/FlatWoken) by [Alessandro Roncone](https://alecive.github.io), which was released under the [CC BY-SA 4.0 License](http://creativecommons.org/licenses/by-sa/4.0/) license.
