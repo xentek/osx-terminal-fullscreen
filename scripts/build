@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -ex
+hdiutil create -srcfolder ./pkg ./dist/Terminal-FullScreen.dmg
+
+# vim: set filetype=sh

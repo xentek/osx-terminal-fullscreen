@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+# This should be run on master, ensuring all upstream updates are pulled in.
+#
+# Example: ./scripts/release v0.0.0 "Release Notes Message ..."
+
+set -e
+if [ -f ./dist/Terminal-FullScreen.dmg ]; then
+  git tag -s ${1} -m "${2}"
+  git push --tags
+  rm -f .git/RELEASE_EDITMSG
+  touch .git/RELEASE_EDITMSG
+  echo "${1}\n\n${2}" >> .git/RELEASE_EDITMSG
+  hub release create -f .git/RELEASE_EDITMSG ${1}
+else
+  echo "$(pwd)/dist/Terminal-FullScreen.dmg does not exist"
+fi
+# vim: set filetype=sh
